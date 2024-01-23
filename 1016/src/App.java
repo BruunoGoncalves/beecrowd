@@ -6,16 +6,13 @@ public class App {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int X, Y, Km, minutos;
-
-        X = 60;
-        Y = 30;
+        int Km, minutos;
         
         Km = sc.nextInt();
 
-        minutos = (X * Km) / Y;
+        minutos = (60 * Km) / 30;
 
-        System.out.printf("%d minutos", minutos);
+        System.out.printf("%d minutos%n", minutos);
         
         sc.close();
     }
